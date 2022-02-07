@@ -1,0 +1,79 @@
+body {
+    margin: 0 2rem;
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 1.5rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+.container-nav {
+    margin: 2rem ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;   
+    color: white;
+    font-weight: 700; 
+    width: 10rem;
+    height: 2rem;
+    margin: 0 1rem;
+    border: none;
+    border-radius: 25px;
+    transition: all .2s ease-in-out;
+}
+
+.add {
+    background-color: #3e8e41
+}
+
+.delete {
+    background-color: #ca3b3b;
+}
+
+.btn:hover, .btn:focus {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .container-nav {
+        margin: 2rem ;
+        display: flex;
+        flex-direction: column;
+    }
+    .container-nav_buttons {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    .btn {
+        margin: .5rem 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
