@@ -10,6 +10,7 @@
         <title>Scandiweb Test</title>
     </head>
     <body>
+        <!-- Navigation bar, it contains the title and two buttons. -->
         <nav>
             <div class="container-nav">
                 <h1>Product List</h1>
@@ -19,5 +20,15 @@
                 </div>
             </div>
         </nav>
+
+        <!--Section, here the products are displayed. -->
+        <section>
+
+        </section>
+
+        <!-- Footer, place at the bottom with a paragraph. -->
+        <footer>
+            <p class="footer-text">Scandiweb Test assignment</p>
+        </footer>
     </body>
 </html>
