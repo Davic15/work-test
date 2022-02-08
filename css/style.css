@@ -39,7 +39,7 @@ nav {
     background-color: #ca3b3b;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover {
     transform: scale(1.1);
 }
 

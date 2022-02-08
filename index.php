@@ -20,6 +20,14 @@
                 </div>
             </div>
         </nav>
+        
+        <!-- Getting products using PHP -->
+        <?php 
+            require "./Loader/Loader.php";
+            /*$products = new FunctionsProducts();
+            echo $products->getProducts();*/
+            $products = (new FunctionsProducts)->getProducts();
+        ?>
 
         <!--Section, here the products are displayed. -->
         <section>
