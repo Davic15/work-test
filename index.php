@@ -24,14 +24,32 @@
         <!-- Getting products using PHP -->
         <?php 
             require "./Loader/Loader.php";
-            /*$products = new FunctionsProducts();
-            echo $products->getProducts();*/
             $products = (new FunctionsProducts)->getProducts();
         ?>
 
         <!--Section, here the products are displayed. -->
         <section>
-
+            <form action="" method="post" id="form">
+                <div class="product-container_main">
+                    <?php 
+                        foreach ($products as $prod) {
+                            echo (
+                                '
+                                    <div class="product-container_top">
+                                        <input type="checkbox" class="delete-checkbox" name="checkbox[] value="' . $prod->id .'">
+                                        <div class="product-container_body">
+                                            <p class="description">' . $prod->sku . '</p>
+                                            <p class="description">' . $prod->name . '</p>
+                                            <p class="description">' . $prod->price . '$</p>
+                                            <p class="description">' . $prod->specification . '</p>
+                                        </div>
+                                    </div>
+                                '
+                            );
+                        }
+                    ?>
+                </div>
+            </form>
         </section>
 
         <!-- Footer, place at the bottom with a paragraph. -->

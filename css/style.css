@@ -48,11 +48,45 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 95%;
+    width: 5%;
     color: black;
     text-align: center;
     border-top: 1px solid black;
     margin: 0 2rem;
+    background-color: white;
+}
+
+/* Section - Product */
+.product-container_main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product-container_top {
+    border: 1px black solid;
+    width: 250px;
+    height: 250px;
+    margin: .5rem;
+}
+
+.product-container_body {
+    text-align: center;
+}
+
+.description {
+    font-size: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+.delete-checkbox {
+    margin: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
@@ -80,6 +114,14 @@ footer {
     footer {
         width: 85%;
     }
+    .product-container_main {
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .product-container_top {
+        margin: 0.5rem auto;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -101,6 +143,11 @@ footer {
     footer {
         width: 90%;
     }
+    .product-container_main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
