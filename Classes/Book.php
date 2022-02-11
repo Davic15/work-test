@@ -6,7 +6,7 @@
         public function __construct($data) {
             $this->connection = new Connection;
             Parent::__construct($data);
-            $this->weigth = $data["weight"];
+            $this->weight = $data["weight"];
         }
 
         public function addProduct() {
