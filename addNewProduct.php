@@ -87,7 +87,7 @@
                         <label class="label" for="weight">Weight (KG):</label>
                     </div>
                     <div id="input">
-                        <input type="number" id="weight" step="1" name="weight" placeholder="#weight" required>
+                        <input type="number" id="weight" step="0.1" name="weight" placeholder="#weight" required>
                     </div>
                 </div>
                 

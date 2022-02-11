@@ -1,7 +1,6 @@
 const formDvdEl = document.getElementById("form-dvd");
 const formBookEl = document.getElementById("form-book");
 const formFurnitureEl = document.getElementById("form-furniture");
-const btnsubmit = document.getElementById("submit");
 const typeProductEl = document.getElementById("productType");
 
 const sizeEl = document.getElementById("size");
