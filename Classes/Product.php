@@ -8,7 +8,7 @@
             $this->name = $data["name"];
             $this->sku = $data["sku"];
             $this->price = $data["price"];
-            $this->producType = $data["productType"];
+            $this->productType = $data["productType"];
         }
         abstract function addProduct();
     }

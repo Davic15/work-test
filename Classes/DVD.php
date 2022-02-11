@@ -9,7 +9,7 @@
             $this->size = $data["size"];
         }
 
-        public function addProduction() {
+        public function addProduct() {
             $this->connection->query("
                 INSERT INTO products (
                     sku, name, price, productType, specification
@@ -19,7 +19,7 @@
                     '" . $this->name ."',
                     '" . $this->price ."',
                     '" . $this->productType ."',
-                    'Size (MB): " . $this->size ."')"
+                    'Size (MB): " . $this->size . "')"
             );
             return $this->connection->execute() ? true : false;
         }
