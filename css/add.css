@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container-form-add {
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+.outer {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+}
+
+.labelClass {
+  width: 20%;
+  float: left;
+  text-align: left;
+  padding-right: 10px;
+}
+
+#input {
+  width: 50%;
+  float: left;
+}
+
+.input {
+  width: 100%;
+}
+
+
+
+
+/* Media Queries (Small and big screens)*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+}

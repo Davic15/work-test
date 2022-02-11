@@ -15,8 +15,8 @@
             <div class="container-nav">
                 <h1>Product List</h1>
                 <div class="container-nav_buttons">
-                    <button class="btn add">ADD</button>
-                    <button class="btn delete">MASS DELETE</button>
+                    <button id="add-product-btn" class="btn add">ADD</button>
+                    <button id="delete-product-btn" name="delete" form="form" class="btn delete">MASS DELETE</button>
                 </div>
             </div>
         </nav>
@@ -36,7 +36,7 @@
                             echo (
                                 '
                                     <div class="product-container_top">
-                                        <input type="checkbox" class="delete-checkbox" name="checkbox[] value="' . $prod->id .'">
+                                        <input type="checkbox" class="delete-checkbox" name="checkbox[]" value="' . $prod->id . '">
                                         <div class="product-container_body">
                                             <p class="description">' . $prod->sku . '</p>
                                             <p class="description">' . $prod->name . '</p>
@@ -51,10 +51,18 @@
                 </div>
             </form>
         </section>
-
-        <!-- Footer, place at the bottom with a paragraph. -->
+        
+        <!-- Delete Products using PHP -->
+        <?php 
+            if(isset($_POST['delete'])) {
+                (new FunctionsProducts)->deleteProducts($_POST["checkbox"]);
+                echo "<meta http-equiv='refresh' content='0'>";
+            }
+        ?>
+        <!-- Footer, placed at the bottom with a paragraph. -->
         <footer>
             <p class="footer-text">Scandiweb Test assignment</p>
         </footer>
+        <script src="./javascript/index.js"></script>
     </body>
 </html>
