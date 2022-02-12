@@ -1,5 +1,5 @@
 <?php
-    abstract class Product {
+    abstract class Products {
         public $name;
         public $sku;
         public $price;

@@ -1,10 +1,10 @@
 <?php
-    class Book extends Product {
+    class Book extends Products {
         public $weight;
         public $connection;
 
         public function __construct($data) {
-            $this->connection = new Connection;
+            $this->connection = new ConnectionDataBase;
             Parent::__construct($data);
             $this->weight = $data["weight"];
         }

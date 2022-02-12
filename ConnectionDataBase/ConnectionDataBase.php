@@ -1,5 +1,5 @@
 <?php
-    class Connection {
+    class ConnectionDataBase {
         private $dbHost     = "localhost";
         private $dbUsername = "root";
         private $dbPassword = "";

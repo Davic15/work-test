@@ -1,10 +1,10 @@
 <?php
-    class DVD extends Product {
+    class DVD extends Products {
         public $size;
         public $connection;
 
         public function __construct($data) {
-            $this->connection = new Connection;
+            $this->connection = new ConnectionDataBase;
             Parent::__construct($data);
             $this->size = $data["size"];
         }

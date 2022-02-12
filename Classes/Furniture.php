@@ -1,12 +1,12 @@
 <?php
-    class Furniture extends Product {
+    class Furniture extends Products {
         public $height;
         public $width;
         public $length;
         public $connection;
 
         public function __construct($data) {
-            $this->connection = new Connection;
+            $this->connection = new ConnectionDataBase;
             Parent::__construct($data);
             $this->height = $data["height"];
             $this->width = $data["width"];

@@ -15,9 +15,9 @@ typeProductEl.addEventListener("change", formHideDisplay);
 
 function formHideDisplay() {
     let opts = typeProductEl.value;
-    opts == "Dvd" ? dvdOption() : 
-        opts == "Book" ? bookOption() :
-            opts == "Furniture" ? fornitureOption() : console.log("No option selected");
+    opts == "Dvd" && dvdOption();
+    opts == "Book" && bookOption();
+    opts == "Furniture" && furnitureOption();
 }
 
 function dvdOption() {
@@ -49,7 +49,7 @@ function bookOption() {
 
 }
 
-function fornitureOption() {
+function furnitureOption() {
     formDvdEl.classList.add("hidden")
     formBookEl.classList.add("hidden");
     formFurnitureEl.classList.remove("hidden");

@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./styles/index.css">
         <title>Scandiweb Test</title>
     </head>
     <body>
@@ -24,7 +24,7 @@
         <!-- Getting products using PHP -->
         <?php 
             require "./Loader/Loader.php";
-            $products = (new FunctionsProducts)->getProducts();
+            $products = (new GetDeleteProducts)->getProducts();
         ?>
 
         <!--Section, here the products are displayed. -->
@@ -55,7 +55,7 @@
         <!-- Delete Products using PHP -->
         <?php 
             if(isset($_POST['delete'])) {
-                (new FunctionsProducts)->deleteProducts($_POST["checkbox"]);
+                (new GetDeleteProducts)->deleteProducts($_POST["checkbox"]);
                 echo "<meta http-equiv='refresh' content='0'>";
             }
         ?>

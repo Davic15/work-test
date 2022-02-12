@@ -14,8 +14,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/index.css">
-        <link rel="stylesheet" href="./css/add.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/add.css">
         <title>Scandiweb Test</title>
     </head>
     <body>
