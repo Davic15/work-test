@@ -1,16 +1,10 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .container-form-add {
     margin: 1rem;
     font-size: 1.4rem;
 }
 
 .outer {
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
   display: flex;
   align-items: center;
@@ -36,21 +30,27 @@
   display: none;
 }
 
-
+.description-products {
+  margin-bottom: 10rem;
+}
 
 /* Media Queries (Small and big screens)*/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
+  .outer {
+    width: 100%;
+    margin: 20px auto;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  
+  .outer {
+    width: 100%;
+    margin: 20px auto;
+    align-items: center;
+    flex-direction: row;
+  }
 }

@@ -1,7 +1,9 @@
 const formDvdEl = document.getElementById("form-dvd");
 const formBookEl = document.getElementById("form-book");
 const formFurnitureEl = document.getElementById("form-furniture");
+
 const typeProductEl = document.getElementById("productType");
+const descriptionEl = document.getElementById("description-products");
 
 const sizeEl = document.getElementById("size");
 const weightEl = document.getElementById("weight");
@@ -15,7 +17,7 @@ function formHideDisplay() {
     let opts = typeProductEl.value;
     opts == "Dvd" ? dvdOption() : 
         opts == "Book" ? bookOption() :
-            opts == "Furniture" ? fornitureOption() : console.log("no option");
+            opts == "Furniture" ? fornitureOption() : console.log("No option selected");
 }
 
 function dvdOption() {
@@ -28,6 +30,8 @@ function dvdOption() {
     heightEl.removeAttribute("required");
     widthEl.removeAttribute("required");
     lengthEl.removeAttribute("required");
+
+    descriptionEl.innerText = "* Type the size of your DVD in MB."
 }
 
 function bookOption() {
@@ -40,6 +44,9 @@ function bookOption() {
     heightEl.removeAttribute("required");
     widthEl.removeAttribute("required");
     lengthEl.removeAttribute("required");
+
+    descriptionEl.innerText = "* Type the weight of your Book in KG."
+
 }
 
 function fornitureOption() {
@@ -52,4 +59,7 @@ function fornitureOption() {
     heightEl.setAttribute("required", "");
     widthEl.setAttribute("required", "");
     lengthEl.setAttribute("required", "");
+
+    descriptionEl.innerText = "* Type the Height, Width and Length of your Furniture in HxWxL."
+
 }

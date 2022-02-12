@@ -14,7 +14,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
         <link rel="stylesheet" href="./css/add.css">
         <title>Scandiweb Test</title>
     </head>
@@ -24,7 +24,7 @@
             <div class="container-nav">
                 <h1>Add Product</h1>
                 <div class="container-nav_buttons">
-                    <button class="btn add" name="submit" form="product_form">Save</button>
+                    <button id="submit" class="btn add" name="submit" form="product_form">Save</button>
                     <button name="cancel" class="btn delete cancel">Cancel</button>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                         <label class="label" for="price">Price:</label>
                     </div>
                     <div id="input">
-                        <input type="text" id="price" name="price" placeholder="#price" required><br />
+                        <input type="number" step="any" id="price" name="price" placeholder="#price" required><br />
                     </div>
                 </div>
                 <div class="outer">
@@ -79,6 +79,7 @@
                     </div>
                     <div id="input">
                         <input type="number" id="size" step="1" name="size" placeholder="#size" required>
+                        
                     </div>
                 </div>
 
@@ -117,12 +118,12 @@
                         </div>
                     </div>
                 </div>
-                
-                
+                <p id="description-products" class="description-products"></p>
                 
             </form>
 
         </div>
+        <p id="error-input" class="description-products"></p>
 
         <!-- Footer Section -->
         <footer>
