@@ -24,5 +24,4 @@
             return $this->connection->execute() ? true : false;
         }
     }
-
 ?>

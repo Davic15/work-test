@@ -11,6 +11,12 @@
             return $result;
         }
 
+        public function getProductBySku($sku) {
+            $this->connection->query("SELECT * FROM products WHERE sku=" . $sku);
+            $result = $this->connection->resultSet();
+            return $result;
+        }
+
         public function deleteProducts($array) {
             foreach($array as $id) {
                 $this->connection->query("DELETE FROM products WHERE id=" . $id);

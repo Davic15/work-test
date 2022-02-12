@@ -1,3 +1,15 @@
+<!-- Getting products using PHP -->
+<?php 
+    require "./Loader/Loader.php";
+    $products = (new GetDeleteProducts)->getProducts(); 
+?>
+<!-- Delete Products using PHP -->
+<?php 
+    if(isset($_POST['delete'])) {
+        (new GetDeleteProducts)->deleteProducts($_POST["checkbox"]);
+        echo "<meta http-equiv='refresh' content='0'>";
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -21,12 +33,6 @@
             </div>
         </nav>
         
-        <!-- Getting products using PHP -->
-        <?php 
-            require "./Loader/Loader.php";
-            $products = (new GetDeleteProducts)->getProducts();
-        ?>
-
         <!--Section, here the products are displayed. -->
         <section>
             <form action="" method="post" id="form">
@@ -34,6 +40,7 @@
                     <?php 
                         foreach ($products as $prod) {
                             echo (
+                                
                                 '
                                     <div class="product-container_top">
                                         <input type="checkbox" class="delete-checkbox" name="checkbox[]" value="' . $prod->id . '">
@@ -52,13 +59,6 @@
             </form>
         </section>
         
-        <!-- Delete Products using PHP -->
-        <?php 
-            if(isset($_POST['delete'])) {
-                (new GetDeleteProducts)->deleteProducts($_POST["checkbox"]);
-                echo "<meta http-equiv='refresh' content='0'>";
-            }
-        ?>
         <!-- Footer, placed at the bottom with a paragraph. -->
         <footer>
             <p class="footer-text">Scandiweb Test assignment</p>

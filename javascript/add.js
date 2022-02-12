@@ -1,6 +1,7 @@
 const formDvdEl = document.getElementById("form-dvd");
 const formBookEl = document.getElementById("form-book");
 const formFurnitureEl = document.getElementById("form-furniture");
+const btnCancel = document.getElementById("cancel")
 
 const typeProductEl = document.getElementById("productType");
 const descriptionEl = document.getElementById("description-products");
@@ -12,6 +13,11 @@ const widthEl = document.getElementById("width");
 const lengthEl = document.getElementById("length");
 
 typeProductEl.addEventListener("change", formHideDisplay);
+btnCancel.addEventListener("click", cancelButton);
+
+function cancelButton() {
+    window.location.href="../../scandiweb-test/index.php";
+}
 
 function formHideDisplay() {
     let opts = typeProductEl.value;

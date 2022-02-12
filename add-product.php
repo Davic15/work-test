@@ -3,7 +3,7 @@
     if(isset($_POST["submit"])) {
         (new $_POST["productType"]($_POST))->addProduct();
         echo "<script>window.location.href='./index.php'</script>";
-    }
+    } 
 ?>
 
 <!DOCTYPE html>
@@ -25,7 +25,7 @@
                 <h1>Add Product</h1>
                 <div class="container-nav_buttons">
                     <button id="submit" class="btn add" name="submit" form="product_form">Save</button>
-                    <button name="cancel" class="btn delete cancel">Cancel</button>
+                    <button id="cancel" name="cancel" class="btn delete cancel">Cancel</button>
                 </div>
             </div>
         </nav>
