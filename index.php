@@ -1,15 +1,7 @@
-<!-- Getting products using PHP -->
-<?php 
-    require "./Loader/Loader.php";
-    $products = (new GetDeleteProducts)->getProducts(); 
+<?php require "./includes/autoloader.inc.php"; 
+    $products = (new LoadProducts)->getProducts();
 ?>
-<!-- Delete Products using PHP -->
-<?php 
-    if(isset($_POST['delete'])) {
-        (new GetDeleteProducts)->deleteProducts($_POST["checkbox"]);
-        echo "<meta http-equiv='refresh' content='0'>";
-    }
-?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -35,12 +27,11 @@
         
         <!--Section, here the products are displayed. -->
         <section>
-            <form action="" method="post" id="form">
+            <form action="./includes/deleteproducts.inc.php" method="post" id="form">
                 <div class="product-container_main">
                     <?php 
                         foreach ($products as $prod) {
                             echo (
-                                
                                 '
                                     <div class="product-container_top">
                                         <input type="checkbox" class="delete-checkbox" name="checkbox[]" value="' . $prod->id . '">
@@ -51,8 +42,10 @@
                                             <p class="description">' . $prod->specification . '</p>
                                         </div>
                                     </div>
+
                                 '
                             );
+                            
                         }
                     ?>
                 </div>

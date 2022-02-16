@@ -1,10 +1,4 @@
-<?php require_once "./Loader/Loader.php";?>
-<?php 
-    if(isset($_POST["submit"])) {
-        (new $_POST["productType"]($_POST))->addProduct();
-        echo "<script>window.location.href='./index.php'</script>";
-    } 
-?>
+<?php require_once "./includes/autoloader.inc.php";?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +26,7 @@
 
         <!-- Form section -->
         <div class="container-form-add">
-            <form id="product_form" action="" method="POST">
+            <form id="product_form" action="./includes/saveproducts.inc.php" method="POST">
                 <div class="outer">
                     <div id="label" class="labelClass">
                         <label class="label" for="sku">SKU:</label>

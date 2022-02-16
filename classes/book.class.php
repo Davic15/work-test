@@ -1,16 +1,14 @@
 <?php
-    class Book extends Products {
+    class Book extends Product {
         public $weight;
-        public $connection;
 
         public function __construct($data) {
-            $this->connection = new ConnectionDataBase;
             Parent::__construct($data);
-            $this->weight = $data["weight"];
+            $this->weight = $data['weight'];
         }
 
         public function addProduct() {
-            $this->connection->query("
+            $stmt = $this->connect()->prepare("
                 INSERT INTO products (
                     sku, name, price, productType, specification
                 )
@@ -19,9 +17,13 @@
                     '" . $this->name . "',
                     '" . $this->price . "',
                     '" . $this->productType . "',
-                    'Weight (KG): " . $this->weight . "')"
-            );
-            return $this->connection->execute() ? true : false;
+                    'Weight (KG): " . $this->weight . "')");
+            if(!$stmt->execute()) {
+                $stmt = null;
+                header("location: ../index.php?error=stmtfailed");
+                exit();
+            }
+            return true;
         }
     }
 ?>

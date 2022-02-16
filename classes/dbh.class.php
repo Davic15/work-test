@@ -1,0 +1,14 @@
+<?php
+    abstract class Dbh {
+        public function connect() {
+            try {
+                $username = "root";
+                $password = "";
+                $dbh = new PDO('mysql:host=localhost;dbname=scandiweb_test' , $username, $password);
+                return $dbh;
+            } catch (PDOException $e) {
+                print "Error!: " . $e->getMessage() . "<br />";
+                die();
+            }
+        }
+    }
