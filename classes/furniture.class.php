@@ -1,4 +1,15 @@
 <?php
+    /** 
+     * Class Furniture.
+     * It contains the height, width and length
+     * of the furtniture (in cm) to be saved.
+     * Extends the Product Class.
+     * 
+     * Method addProduct
+     * Insert data into the database.
+     * @return true
+     *  If the insert was ok.
+    */
     class Furniture extends Product {
         public $height;
         public $width;
@@ -31,4 +42,4 @@
             return true;
         }
     }
-?>
+

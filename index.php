@@ -1,4 +1,8 @@
-<?php require "./includes/autoloader.inc.php"; 
+<?php 
+    /**
+     * Load the products in the index page.
+     */
+    include_once "./includes/autoloader.inc.php"; 
     $products = (new LoadProducts)->getProducts();
 ?>
 
@@ -42,10 +46,8 @@
                                             <p class="description">' . $prod->specification . '</p>
                                         </div>
                                     </div>
-
                                 '
                             );
-                            
                         }
                     ?>
                 </div>

@@ -1,4 +1,14 @@
 <?php
+    /** 
+     * Class Book.
+     * It contains the weight of the book (in kg) to be saved.
+     * Extends the Product Class.
+     * 
+     * Method addProduct
+     * Insert data into the database.
+     * @return true
+     *  If the insert was ok.
+    */
     class Book extends Product {
         public $weight;
 
@@ -26,4 +36,4 @@
             return true;
         }
     }
-?>
+

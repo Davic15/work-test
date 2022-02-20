@@ -1,3 +1,7 @@
+/*
+ * JavaScript File to add a new product
+ * Hide the form and set the attribute as required for validating purposes.
+*/
 const formDvdEl = document.getElementById("form-dvd");
 const formBookEl = document.getElementById("form-book");
 const formFurnitureEl = document.getElementById("form-furniture");
@@ -16,7 +20,10 @@ typeProductEl.addEventListener("change", formHideDisplay);
 btnCancel.addEventListener("click", cancelButton);
 
 function cancelButton() {
+    //Local development
     window.location.href="../../scandiweb-test/index.php";
+    //Webhost development
+    //window.location.href="../index.php";
 }
 
 function formHideDisplay() {

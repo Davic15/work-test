@@ -1,3 +1,7 @@
+/*
+ * Styles for the index page.
+ * It uses flexbox to create a resposive site.
+*/
 body {
     margin: 0 2rem;
     font-family: 'Montserrat', sans-serif;    
@@ -119,6 +123,9 @@ section {
     .product-container_top {
         margin: 0.5rem auto;
     }
+    section {
+        margin-bottom: 7rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -144,6 +151,7 @@ section {
         flex-wrap: wrap;
         justify-content: center;
     }
+
 
 }
 

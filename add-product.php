@@ -1,5 +1,4 @@
-<?php require_once "./includes/autoloader.inc.php";?>
-
+<?php require_once "./includes/autoloader.inc.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,7 +65,7 @@
                 </div>
 
 
-
+                <!-- DVD -->
                 <div class="outer hidden" id="form-dvd">
                     <div id="label" class="labelClass">
                         <label class="label" for="size">Size (MB):</label>
@@ -77,6 +76,7 @@
                     </div>
                 </div>
 
+                <!-- Book -->
                 <div class="outer hidden" id="form-book">
                     <div id="label" class="labelClass">
                         <label class="label" for="weight">Weight (KG):</label>
@@ -86,6 +86,7 @@
                     </div>
                 </div>
                 
+                <!-- Furniture -->
                 <div id="form-furniture" class="hidden">
                     <div class="outer">
                         <div id="label" class="labelClass">

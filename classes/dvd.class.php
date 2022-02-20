@@ -1,4 +1,14 @@
 <?php
+    /** 
+     * Class Dvd.
+     * It contains the size of the Dvd (in mb) to be saved.
+     * Extends the Product Class.
+     * 
+     * Method addProduct
+     * Insert data into the database.
+     * @return true
+     *  If the insert was ok.
+    */
     class Dvd extends Product {
         public $size;
 
@@ -26,4 +36,3 @@
             return true;
         }
     }
-?>
