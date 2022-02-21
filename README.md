@@ -4,9 +4,24 @@ Scandiweb Junior Developer test assignment.
 ---
 
 ## Pages
-The Website contains two pages:
+The Website contains two pages.
 1. index.php
 2. add-product.php
+
+---
+
+## Folder Structure
+1. classes
+    It contains all classes, methods and attributes related to the website.
+2. includes
+    It contains an autoloader (load a class when it is needed) and the two operation requested (save a new product and delete products).
+3. javascript
+    It contains some scripts triggered when the user clicks a button and some validations.
+4. styles
+    CSS styles for the website.
+    The website is responsive. It contains 3 brakpoints and are optimized for large, medium and small screens.
+5. Root directory
+    It contains the index.php, add-product.php pages and a copy of the Database.
 
 ---
 
@@ -19,13 +34,11 @@ The Website contains two pages:
 
 ---
 
-## Clone a repository
+## Clarifications
+1. I decide to use the vanilla version of all the tools listed above.
+2. I know how to use bootstrap but for this project I used CSS with flexbox and media queries.
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+---
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+## Author
+Franklin David Macias Avellan
