@@ -11,13 +11,13 @@
     class Dbh {
         public function connect() {
             try {
-                
+                /*
                 $username = "root";
                 $password = "";
-                $dbh = new PDO('mysql:host=localhost;dbname=scandiweb_test' , $username, $password);
-                /*$username = "id18481727_root";
+                $dbh = new PDO('mysql:host=localhost;dbname=scandiweb_test' , $username, $password);*/
+                $username = "id18481727_root";
                 $password = "@xT&}J}xIOk*MA5R";
-                $dbh = new PDO('mysql:host=localhost;dbname=id18481727_scandiweb_test' , $username, $password);*/
+                $dbh = new PDO('mysql:host=localhost;dbname=id18481727_scandiweb_test' , $username, $password);
                 return $dbh;
             } catch (PDOException $e) {
                 print "Error!: " . $e->getMessage() . "<br />";

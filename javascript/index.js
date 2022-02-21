@@ -7,7 +7,7 @@ btnNewProductEl.addEventListener("click", addProduct);
 
 function addProduct() {
     // Local Development
-    window.location.href="../../scandiweb-test/add-product.php";
+    //window.location.href="../../scandiweb-test/add-product.php";
     //Webhost Development
-    //window.location.href="../add-product.php";
+    window.location.href="../add-product.php";
 }

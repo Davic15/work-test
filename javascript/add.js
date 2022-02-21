@@ -21,9 +21,9 @@ btnCancel.addEventListener("click", cancelButton);
 
 function cancelButton() {
     //Local development
-    window.location.href="../../scandiweb-test/index.php";
+    //window.location.href="../../scandiweb-test/index.php";
     //Webhost development
-    //window.location.href="../index.php";
+    window.location.href="../index.php";
 }
 
 function formHideDisplay() {

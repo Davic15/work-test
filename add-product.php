@@ -31,7 +31,7 @@
                         <label class="label" for="sku">SKU:</label>
                     </div>
                     <div id="input">
-                        <input type="text" id="sku" name="sku" placeholder="#sku" minlength="8" maxlength="8" required><br />
+                        <input type="text" id="sku" name="sku" placeholder="#sku" minlength="10" maxlength="10" required><br />
                     </div>
                 </div>
                 <div class="outer">
